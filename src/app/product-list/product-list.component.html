@@ -1,0 +1,30 @@
+<h2>Products</h2>
+
+<div *ngFor = "let Product of productsInside">
+  <h4>
+    {{ Product.id }}
+    <a>
+    {{ Product.name }}
+    </a>
+  </h4>
+  <p *ngIf = "Product.description">
+    {{ Product.description }}
+  </p>
+  <button (click) = "share()">
+    Share
+  </button>
+</div>
+
+
+<!-- 
+{{ Product.name }}<br>
+{{ Product.description }}<br>
+<span style = "color:orange">{{ Product.price }}</span>
+ -->
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
